@@ -19,4 +19,4 @@ report: $(REPORT_FILE)
 	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make -jobname=build/$(BUILD_NAME) $(REPORT_FILE)
 
 clean:
-	find ./build -type f ! -name '*.pdf' -delete
+	find ./build -type f ! -name '$(BUILD_NAME).pdf' -delete
